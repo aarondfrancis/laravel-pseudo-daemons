@@ -2,7 +2,12 @@
 
 All notable changes will be documented in this file.
 
-## 0.2.0 6/3/2020
+## 1.1.0 2023-04-13
+
+### Added
+- Added support for Laravel 10, dropped support for Laravel 7.
+
+## 0.2.0 2020-06-03
 
 ### Added
 - Add `daemonize()` macro to `Event`
@@ -11,5 +16,5 @@ All notable changes will be documented in this file.
 
 ### Fixed
 
-## 0.0.1 - 5/17/2020
+## 0.0.1 - 2020-05-17
 - Initial release

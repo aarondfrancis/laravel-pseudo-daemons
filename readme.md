@@ -34,12 +34,17 @@ class TestCommand extends Command
 }
 ``` 
 
-Then, in your `Console\Kernel`, run your command every minute, in the background, without overlapping.
+Then, in your `Console\Kernel`, run your command with the `daemonize` modifier. This is a macro that sets it to run every minute, in the background, without overlapping.
 
 ```php
 // Kernel.php
 
-$schedule->command('test')->everyMinute()
+// Use the daemonize macro.
+$schedule->command('test')->daemonize();
+
+// Or use the underlying methods.
+$schedule->command('test')
+    ->everyMinute()
     ->runInBackground()
     ->withoutOverlapping();
 ```

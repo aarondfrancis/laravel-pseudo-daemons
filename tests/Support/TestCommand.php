@@ -5,9 +5,8 @@
 
 namespace Hammerstone\PseudoDaemon\Tests\Support;
 
-
-use Illuminate\Console\Command;
 use Hammerstone\PseudoDaemon\IsPseudoDaemon;
+use Illuminate\Console\Command;
 
 class TestCommand extends Command
 {
@@ -25,5 +24,4 @@ class TestCommand extends Command
     {
 
     }
-
 }

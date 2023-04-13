@@ -132,5 +132,4 @@ trait IsPseudoDaemon
             return shell_exec('readlink ' . escapeshellarg($pwd));
         }
     }
-
 }

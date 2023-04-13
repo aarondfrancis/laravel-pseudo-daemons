@@ -5,10 +5,10 @@
 
 namespace Hammerstone\PseudoDaemon\Tests;
 
+use Hammerstone\PseudoDaemon\PseudoDaemonServiceProvider;
 use Illuminate\Console\Scheduling\CacheEventMutex;
 use Illuminate\Console\Scheduling\Event;
 use Orchestra\Testbench\TestCase;
-use Hammerstone\PseudoDaemon\PseudoDaemonServiceProvider;
 
 class EventDaemonizeTest extends TestCase
 {

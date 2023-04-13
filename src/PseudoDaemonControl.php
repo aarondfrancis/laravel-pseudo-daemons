@@ -8,6 +8,8 @@ namespace Hammerstone\PseudoDaemon;
 class PseudoDaemonControl
 {
     const STOP = 1;
+
     const DONT_SLEEP = 2;
+
     const DO_SLEEP = 3;
 }

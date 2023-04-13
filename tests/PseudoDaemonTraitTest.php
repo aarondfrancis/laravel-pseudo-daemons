@@ -5,11 +5,11 @@
 
 namespace Hammerstone\PseudoDaemon\Tests;
 
+use Hammerstone\PseudoDaemon\PseudoDaemonControl;
+use Hammerstone\PseudoDaemon\Tests\Support\TestCommand;
 use Illuminate\Support\Carbon;
 use Mockery;
 use Orchestra\Testbench\TestCase;
-use Hammerstone\PseudoDaemon\PseudoDaemonControl;
-use Hammerstone\PseudoDaemon\Tests\Support\TestCommand;
 
 class PseudoDaemonTraitTest extends TestCase
 {
@@ -109,6 +109,7 @@ class PseudoDaemonTraitTest extends TestCase
 
         $command->shouldReceive('restartWhenChanged')->andReturnUsing(function () use (&$fakeData) {
             $fakeData++;
+
             return $fakeData < 5 ? 'Less than five' : 'More than five';
         });
 

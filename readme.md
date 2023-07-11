@@ -1,3 +1,8 @@
+# 🚨🚨 Do not use
+
+You should probably use the framework's built-in [sub-minute scheduled tasks](https://laravel.com/docs/10.x/scheduling#sub-minute-scheduled-tasks) now instead of this package. I'll mark it as abandoned at some point!
+
+
 # Laravel Pseudo-Daemons
 
 A Laravel package to mimic daemons via scheduled commands without having to change server configuration. 
